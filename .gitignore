@@ -1,0 +1,63 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+# ===============================
+# Virtual Environments
+# ===============================
+venv/
+env/
+.venv/
+career/
+career_env/
+*.env
+
+# ===============================
+# IDE / Editor Files
+# ===============================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ===============================
+# OS Generated Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Streamlit & Cache Files
+# ===============================
+.streamlit/
+.cache/
+logs/
+tmp/
+
+# ===============================
+# Data & Uploads
+# ===============================
+data/temp_resume.pdf
+data/*.pdf
+*.csv
+*.json
+
+# ===============================
+# Node / Frontend Builds (if using React)
+# ===============================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# ===============================
+# Environment Configs
+# ===============================
+.env
+*.env.*

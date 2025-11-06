@@ -1,0 +1,65 @@
+# ================================
+# Core Frameworks
+# ================================
+streamlit==1.39.0
+pandas==2.2.3
+numpy==1.26.4
+
+# ================================
+# AI & NLP
+# ================================
+transformers==4.45.2
+torch==2.4.1
+sentencepiece==0.2.0
+google-generativeai==0.8.3
+huggingface-hub==0.24.6
+
+# ================================
+# Web Automation / Data Fetch
+# ================================
+apify-client==1.8.1
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# ================================
+# Resume Parsing / PDF Handling
+# ================================
+PyMuPDF==1.24.10        # For resume PDF reading (fitz)
+pdfminer.six==20231228   # Alternate text extraction
+spacy==3.7.5
+
+# ================================
+# Database
+# ================================
+sqlite-utils==3.36
+SQLAlchemy==2.0.35
+
+# ================================
+# Utilities
+# ================================
+python-dotenv==1.0.1
+tqdm==4.66.5
+loguru==0.7.2
+
+# ================================
+# Security / Auth
+# ================================
+bcrypt==4.1.3
+passlib==1.7.4
+
+# ================================
+# Backend API (optional for full stack)
+# ================================
+fastapi==0.115.0
+uvicorn==0.31.0
+
+# ================================
+# Frontend (React handled separately)
+# ================================
+# Install via npm/yarn in frontend directory
+
+# ================================
+# Dev & Debug
+# ================================
+ipykernel==6.29.5
+black==24.8.0
