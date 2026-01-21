@@ -6,7 +6,8 @@ Career Captain is an AI-powered career intelligence platform that analyzes resum
 
 The system is designed with a AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
 
-![Career Captain Architecture](Career%20Caption%20Architecture.png)
+![Career Captain Architecture](images/Career%20Captian%20Architecture.png)
+
 
 
 ### Project Overview
