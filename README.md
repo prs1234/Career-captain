@@ -4,7 +4,9 @@ Email: prs1234hant@gmail.com
 
 Career Captain is an AI-powered career intelligence platform that analyzes resumes, matches them with live job postings, and generates personalized insights such as missing skills, learning pathways, recruiter cold emails, and interview question–answer sets.
 
-The system is designed with a strong AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
+The system is designed with a AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
+
+![Career Captain Architecture](Career Caption Architecture.png)
 
 ### Project Overview
 
@@ -135,7 +137,7 @@ Database: career_captain.db
 
 ### Installation & Setup
 
-Backend Setup
+### Backend Setup
 
 Clone the repository
 git clone https://github.com/prashantsahu-ai/career-captain.git
@@ -155,7 +157,7 @@ pip install -r requirements.txt
 Run the backend
 streamlit run front.py
 
-Frontend Setup
+### Frontend Setup
 
 cd ../frontend
 npm install
@@ -164,7 +166,7 @@ npm run dev
 Open in browser
 http://localhost:5173
 
-UI Overview
+### UI Overview
 
 Login / Signup
 Secure user authentication
