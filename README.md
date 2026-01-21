@@ -1,29 +1,34 @@
-
-**Career Captain – AI Resume Job Matcher & Interview Coach**
+Career Captain – AI Resume Job Matcher & Interview Coach
 Created by: Prashant Sahu
-Email: [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)
+Email: prs1234hant@gmail.com
 
 Career Captain is an AI-powered career intelligence platform that analyzes resumes, matches them with live job postings, and generates personalized insights such as missing skills, learning pathways, recruiter cold emails, and interview question–answer sets.
 
 The system is designed with a strong AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
 
-### Project Overview
+Project Overview
 
 Career Captain focuses on automating the job search and interview preparation process using large language models and intelligent skill-matching algorithms.
 
 Key capabilities include:
-• Resume parsing and skill extraction
-• Live job matching using external job data
-• AI-generated summaries and recommendations
-• Interview question and answer generation
-• Learning roadmap suggestions
-• Recruiter cold email drafting
-• Secure user authentication and history tracking
+
+Resume parsing and skill extraction
+
+Live job matching using external job data
+
+AI-generated summaries and recommendations
+
+Interview question and answer generation
+
+Learning roadmap suggestions
+
+Recruiter cold email drafting
+
+Secure user authentication and history tracking
 
 The backend is built for scalable AI processing, while the frontend delivers a smooth and interactive user experience.
 
-
-### Core AI & Backend Capabilities
+Core AI & Backend Capabilities
 
 Resume Intelligence
 Automatically extracts skills, experience, and keywords from uploaded resumes using NLP techniques.
@@ -49,9 +54,7 @@ Creates professional recruiter outreach emails based on job role and resume data
 User Management
 Implements secure authentication with hashed passwords and maintains user search history in SQLite.
 
-
-
-### Technology Stack
+Technology Stack
 
 Frontend
 React 18, Tailwind CSS, Framer Motion, Vite, Lucide React
@@ -71,23 +74,25 @@ Git, GitHub, Docker, Linux, Streamlit Cloud, Vercel, Render
 Authentication
 Custom SHA-256 password hashing system
 
-
-
-### System Architecture
+System Architecture
 
 Backend (Python + Streamlit)
 Handles AI logic, resume parsing, job matching, database management, and API communication.
 
 Main Engine (main.py)
-• Fetches job data using Apify
-• Matches resumes with job listings
-• Calls Gemini API for summaries and Q&A
-• Stores results in SQLite
+
+Fetches job data using Apify
+
+Matches resumes with job listings
+
+Calls Gemini API for summaries and Q&A
+
+Stores results in SQLite
 
 Frontend (React + Tailwind)
 Provides a responsive UI for login, job search, results visualization, and AI actions.
 
-### Project Structure
+Project Structure
 
 Backend
 auth.py – User authentication
@@ -104,8 +109,7 @@ JobCard.jsx – Job result cards
 api.js – Backend API calls
 App.js – Root component
 
-
-### API Endpoints
+API Endpoints
 
 POST /api/match
 Uploads resume and returns matched job results
@@ -125,17 +129,17 @@ Suggests learning paths
 POST /api/summarize
 Summarizes matched vs missing skills
 
-
-### Database Schema
+Database Schema
 
 Database: career_captain.db
 
-### Installation & Setup
+Installation & Setup
 
 Backend Setup
 
 Clone the repository
-git clone [https://github.com/prashantsahu-ai/career-captain.git](https://github.com/prashantsahu-ai/career-captain.git)
+git clone https://github.com/prashantsahu-ai/career-captain.git
+
 cd career-captain/backend
 
 Create virtual environment
@@ -158,10 +162,9 @@ npm install
 npm run dev
 
 Open in browser
-[http://localhost:5173](http://localhost:5173)
+http://localhost:5173
 
-
-### UI Overview
+UI Overview
 
 Login / Signup
 Secure user authentication
@@ -178,7 +181,7 @@ Expandable interview questions and answers
 Cold Email Generator
 Role-based recruiter email drafts
 
-### Future Enhancements
+Future Enhancements
 
 Google OAuth login
 AI Career Mentor chatbot
@@ -186,19 +189,15 @@ Job alert notifications
 LinkedIn and Indeed API integration
 Skill trend analytics dashboard
 
-
-### License
+License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it for learning or professional purposes.
 
-
-### Author
+Author
 
 Prashant Sahu
 AI Engineer and Full-Stack Developer
-Email: [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)
+Email: prs1234hant@gmail.com
 
 Focused on building production-grade AI systems that solve real-world problems using LLMs, NLP, and scalable backend architectures.
-
-
