@@ -1,219 +1,204 @@
-# 🚀 Career Captain – AI Resume Job Matcher & Interview Coach
 
-> **Created by:** Prashant Sahu  
-> **Email:** [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)
+**Career Captain – AI Resume Job Matcher & Interview Coach**
+Created by: Prashant Sahu
+Email: [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)
 
-Career Captain is an **AI-powered career assistant** that analyzes resumes, matches them with live job postings, and provides personalized insights such as missing skills, learning pathways, cold emails, and interview Q&A — all in one intuitive platform.
+Career Captain is an AI-powered career intelligence platform that analyzes resumes, matches them with live job postings, and generates personalized insights such as missing skills, learning pathways, recruiter cold emails, and interview question–answer sets.
 
-It combines **Streamlit (Python)** for backend logic and **React + Tailwind + Framer Motion** for a next-gen, responsive frontend interface.
+The system is designed with a strong AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
 
----
+### Project Overview
 
-## 🌟 Features
+Career Captain focuses on automating the job search and interview preparation process using large language models and intelligent skill-matching algorithms.
 
-### 🧠 AI-Driven Analysis
-- Extracts skills from uploaded resumes.
-- Matches candidate skills with live job listings from **Naukri (via Apify)**.
-- Highlights **matched** and **missing** skills for each job.
+Key capabilities include:
+• Resume parsing and skill extraction
+• Live job matching using external job data
+• AI-generated summaries and recommendations
+• Interview question and answer generation
+• Learning roadmap suggestions
+• Recruiter cold email drafting
+• Secure user authentication and history tracking
 
-### 🧾 Smart Summaries
-- Uses **Google Gemini 2.5 Flash API** to generate professional skill summaries.
+The backend is built for scalable AI processing, while the frontend delivers a smooth and interactive user experience.
 
-### 🎯 Interview & Learning Tools
-- Auto-generates **interview questions** and **answers** using LLMs.
-- Suggests **learning pathways** for missing skills.
-- Offers a **cold-email generator** to contact recruiters directly.
 
-### 🔐 User Management
-- Signup / Login with secure password hashing.
-- Personalized search history stored in SQLite.
+### Core AI & Backend Capabilities
 
-### 💼 Interactive Frontend
-- Fully responsive **React + Tailwind UI**.
-- Elegant hover animations and transitions (Framer Motion).
-- Separate pages for:
-  1. **Login / Signup**
-  2. **Job Search**
-  3. **AI Results & Actions**
+Resume Intelligence
+Automatically extracts skills, experience, and keywords from uploaded resumes using NLP techniques.
 
----
+Job Matching Engine
+Fetches real-time job listings from Naukri via Apify and matches them with candidate profiles based on skill similarity.
 
-## 🧩 Project Structure
+Skill Gap Analysis
+Identifies missing skills for each job role and highlights strengths and weaknesses.
 
-### 🔙 Backend (`/backend`)
+LLM-Powered Summaries
+Uses Google Gemini 2.5 Flash API to generate professional summaries and insights.
 
-| File | Description |
-|------|--------------|
-| `auth.py` | Handles signup/login with SHA-256 hashing. |
-| `database.py` | Manages SQLite database initialization and search history. |
-| `resume_job_parser.py` | Parses resumes and extracts skills. |
-| `gemini_helper.py` | Interfaces with Google Gemini API for text generation. |
+Interview Preparation
+Generates role-specific interview questions and high-quality answers using LLMs.
 
-### 🐍 Main Engine (`main.py`)
-Core Python logic:
-- Fetches job listings from **Apify (Naukri Scraper)**.  
-- Matches resumes → jobs.  
-- Summarizes results via Gemini.  
-- Stores searches in database.
+Learning Path Suggestions
+Recommends structured learning paths for missing skills.
 
-### 🎨 Frontend (React)
-Located in `/frontend/`:
+Cold Email Generator
+Creates professional recruiter outreach emails based on job role and resume data.
 
-```
-frontend/
-├── src/
-│   ├── components/
-│   │   ├── CareerCaptain.jsx    # Main app interface
-│   │   ├── Navbar.jsx           # Top navigation
-│   │   ├── LoginForm.jsx        # Authentication component
-│   │   └── JobCard.jsx          # Job result UI component
-│   ├── api/
-│   │   └── api.js               # Fetch functions to backend endpoints
-│   ├── App.js                   # Root component
-│   ├── index.css                # Tailwind base styles
-│   └── main.jsx                 # React entry point
-├── public/
-└── package.json
-```
+User Management
+Implements secure authentication with hashed passwords and maintains user search history in SQLite.
 
----
 
-## ⚙️ Tools & Technologies
 
-| Category | Tools |
-|-----------|-------|
-| **Frontend** | React 18, Tailwind CSS, Framer Motion, Lucide React, Vite |
-| **Backend** | Python 3.10+, Streamlit, SQLite 3, Apify Client, Google Gemini API |
-| **AI / ML Models** | Gemini 2.5 Flash (Model by Google) |
-| **APIs & Services** | Apify Naukri Job Scraper, Google Generative AI SDK |
-| **Version Control & Deployment** | Git, GitHub, Streamlit Cloud / Vercel / Render |
-| **Authentication** | Custom SHA-256 based hash (login/signup) |
-| **UI Design** | Tailwind CSS + Framer Motion for animations |
+### Technology Stack
 
----
+Frontend
+React 18, Tailwind CSS, Framer Motion, Vite, Lucide React
 
-## 🧠 Workflow Overview
+Backend
+Python 3.10+, Streamlit, SQLite, Apify Client, Google Gemini API
 
-```mermaid
-graph TD
-A[Upload Resume PDF] --> B[Extract Skills via NLP]
-B --> C[Fetch Jobs via Apify API]
-C --> D[Match Skills & Compute Score]
-D --> E[Summarize using Gemini]
-E --> F[Display in React Frontend]
-F --> G[Q&A / Cold Email / Learning Path]
-```
+AI / ML
+Google Gemini 2.5 Flash, NLP Pipelines, Skill Matching Algorithms
 
----
+Databases
+SQLite, FAISS, Qdrant, ChromaDB
 
-## 🛠️ Installation & Setup
+DevOps & Tools
+Git, GitHub, Docker, Linux, Streamlit Cloud, Vercel, Render
 
-### 🔹 Backend (Streamlit)
-1. Clone repo and open backend directory:
-   ```bash
-   git clone https://github.com/prashantsahu-ai/career-captain.git
-   cd career-captain/backend
-   ```
+Authentication
+Custom SHA-256 password hashing system
 
-2. Create & activate virtual environment:
-   ```bash
-   python -m venv career
-   source career/bin/activate       # macOS/Linux
-   career\Scripts\activate          # Windows
-   ```
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-4. Run the app:
-   ```bash
-   streamlit run front.py
-   ```
+### System Architecture
 
----
+Backend (Python + Streamlit)
+Handles AI logic, resume parsing, job matching, database management, and API communication.
 
-### 🔹 Frontend (React)
-1. Go to frontend folder:
-   ```bash
-   cd ../frontend
-   ```
+Main Engine (main.py)
+• Fetches job data using Apify
+• Matches resumes with job listings
+• Calls Gemini API for summaries and Q&A
+• Stores results in SQLite
 
-2. Install packages:
-   ```bash
-   npm install
-   ```
+Frontend (React + Tailwind)
+Provides a responsive UI for login, job search, results visualization, and AI actions.
 
-3. Start development server:
-   ```bash
-   npm run dev
-   ```
+### Project Structure
 
-4. Open in browser:
-   ```
-   http://localhost:5173
-   ```
+Backend
+auth.py – User authentication
+database.py – SQLite management
+resume_job_parser.py – Resume parsing and skill extraction
+gemini_helper.py – Gemini API integration
+main.py – Core AI workflow
 
----
+Frontend
+CareerCaptain.jsx – Main interface
+Navbar.jsx – Navigation bar
+LoginForm.jsx – Authentication UI
+JobCard.jsx – Job result cards
+api.js – Backend API calls
+App.js – Root component
 
-## 🔌 Backend API Routes
 
-| Endpoint | Method | Description |
-|-----------|--------|-------------|
-| `/api/match` | POST | Uploads resume & finds matching jobs |
-| `/api/questions` | POST | Generates interview questions |
-| `/api/answer` | POST | Generates answer for a question |
-| `/api/cold_email` | POST | Creates recruiter cold email |
-| `/api/suggest` | POST | Suggests learning paths |
-| `/api/summarize` | POST | Summarizes matched vs missing skills |
+### API Endpoints
 
----
+POST /api/match
+Uploads resume and returns matched job results
 
-## 🧩 Database Schema
+POST /api/questions
+Generates interview questions
 
-**SQLite:** `career_captain.db`
+POST /api/answer
+Generates AI answers
 
-**Tables**
-- `users(email TEXT PRIMARY KEY, password TEXT NOT NULL)`
-- `searches(id INTEGER PRIMARY KEY AUTOINCREMENT, user_email TEXT, keywords TEXT, location TEXT, job_title TEXT, company TEXT, matched_skills TEXT, missing_skills TEXT, summary TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`
+POST /api/cold_email
+Creates recruiter email drafts
 
----
+POST /api/suggest
+Suggests learning paths
 
-## 🎨 UI Overview
+POST /api/summarize
+Summarizes matched vs missing skills
 
-| Section | Description |
-|----------|-------------|
-| **Login / Signup** | Authenticates users and creates profiles. |
-| **Dashboard** | Upload resume, set keywords, and fetch matching jobs. |
-| **Results Page** | Interactive job cards with progress bars, skill summaries, and AI actions. |
-| **Q&A Panel** | Expandable cards showing interview questions and AI answers. |
-| **Cold Email Generator** | Generates recruiter email drafts based on role. |
 
----
+### Database Schema
 
-## 💡 Future Enhancements
-- OAuth (Google Login)
-- Chat-based AI Career Mentor
-- Job Alert Notifications
-- Integration with LinkedIn API / Indeed API
-- Dashboard Analytics for Skill Trends
+Database: career_captain.db
 
----
+### Installation & Setup
 
-## 🧾 License
-This project is open-sourced under the **MIT License**.  
-You’re free to modify, distribute, and use it for learning or professional purposes.
+Backend Setup
 
----
+Clone the repository
+git clone [https://github.com/prashantsahu-ai/career-captain.git](https://github.com/prashantsahu-ai/career-captain.git)
+cd career-captain/backend
 
-## 👨‍💻 Author
+Create virtual environment
+python -m venv career
 
-**Prashant Sahu**  
-📧 [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)  
-💼 AI Engineer & Full-Stack Developer  
-💡 Passionate about building real-world AI tools that simplify human decision-making.
+Activate environment
+career\Scripts\activate (Windows)
+source career/bin/activate (Linux/Mac)
 
----
+Install dependencies
+pip install -r requirements.txt
 
-> *“Career Captain empowers professionals to find smarter career paths, powered by AI.”*
+Run the backend
+streamlit run front.py
+
+Frontend Setup
+
+cd ../frontend
+npm install
+npm run dev
+
+Open in browser
+[http://localhost:5173](http://localhost:5173)
+
+
+### UI Overview
+
+Login / Signup
+Secure user authentication
+
+Dashboard
+Resume upload, job search, filters
+
+Results Page
+Skill match visualization, AI insights, action buttons
+
+Interview Panel
+Expandable interview questions and answers
+
+Cold Email Generator
+Role-based recruiter email drafts
+
+### Future Enhancements
+
+Google OAuth login
+AI Career Mentor chatbot
+Job alert notifications
+LinkedIn and Indeed API integration
+Skill trend analytics dashboard
+
+
+### License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it for learning or professional purposes.
+
+
+### Author
+
+Prashant Sahu
+AI Engineer and Full-Stack Developer
+Email: [prs1234hant@gmail.com](mailto:prs1234hant@gmail.com)
+
+Focused on building production-grade AI systems that solve real-world problems using LLMs, NLP, and scalable backend architectures.
+
+
