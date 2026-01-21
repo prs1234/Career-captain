@@ -1,4 +1,4 @@
-Career Captain – AI Resume Job Matcher & Interview Coach
+### Career Captain – AI Resume Job Matcher & Interview Coach
 Created by: Prashant Sahu
 Email: prs1234hant@gmail.com
 
@@ -6,11 +6,11 @@ Career Captain is an AI-powered career intelligence platform that analyzes resum
 
 The system is designed with a strong AI/ML backend using Python, LLMs, vector search, and NLP pipelines, combined with a modern full-stack interface for real-world usability.
 
-Project Overview
+### Project Overview
 
 Career Captain focuses on automating the job search and interview preparation process using large language models and intelligent skill-matching algorithms.
 
-Key capabilities include:
+### Key capabilities include:
 
 Resume parsing and skill extraction
 
@@ -28,7 +28,7 @@ Secure user authentication and history tracking
 
 The backend is built for scalable AI processing, while the frontend delivers a smooth and interactive user experience.
 
-Core AI & Backend Capabilities
+### Core AI & Backend Capabilities
 
 Resume Intelligence
 Automatically extracts skills, experience, and keywords from uploaded resumes using NLP techniques.
@@ -54,7 +54,7 @@ Creates professional recruiter outreach emails based on job role and resume data
 User Management
 Implements secure authentication with hashed passwords and maintains user search history in SQLite.
 
-Technology Stack
+### Technology Stack
 
 Frontend
 React 18, Tailwind CSS, Framer Motion, Vite, Lucide React
@@ -74,7 +74,7 @@ Git, GitHub, Docker, Linux, Streamlit Cloud, Vercel, Render
 Authentication
 Custom SHA-256 password hashing system
 
-System Architecture
+### System Architecture
 
 Backend (Python + Streamlit)
 Handles AI logic, resume parsing, job matching, database management, and API communication.
@@ -92,16 +92,16 @@ Stores results in SQLite
 Frontend (React + Tailwind)
 Provides a responsive UI for login, job search, results visualization, and AI actions.
 
-Project Structure
+### Project Structure
 
-Backend
+### Backend
 auth.py – User authentication
 database.py – SQLite management
 resume_job_parser.py – Resume parsing and skill extraction
 gemini_helper.py – Gemini API integration
 main.py – Core AI workflow
 
-Frontend
+### Frontend
 CareerCaptain.jsx – Main interface
 Navbar.jsx – Navigation bar
 LoginForm.jsx – Authentication UI
@@ -109,7 +109,7 @@ JobCard.jsx – Job result cards
 api.js – Backend API calls
 App.js – Root component
 
-API Endpoints
+### API Endpoints
 
 POST /api/match
 Uploads resume and returns matched job results
@@ -129,11 +129,11 @@ Suggests learning paths
 POST /api/summarize
 Summarizes matched vs missing skills
 
-Database Schema
+### Database Schema
 
 Database: career_captain.db
 
-Installation & Setup
+### Installation & Setup
 
 Backend Setup
 
@@ -181,7 +181,7 @@ Expandable interview questions and answers
 Cold Email Generator
 Role-based recruiter email drafts
 
-Future Enhancements
+### Future Enhancements
 
 Google OAuth login
 AI Career Mentor chatbot
@@ -189,15 +189,38 @@ Job alert notifications
 LinkedIn and Indeed API integration
 Skill trend analytics dashboard
 
-License
+### License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it for learning or professional purposes.
 
-Author
+### Author
 
 Prashant Sahu
 AI Engineer and Full-Stack Developer
 Email: prs1234hant@gmail.com
 
-Focused on building production-grade AI systems that solve real-world problems using LLMs, NLP, and scalable backend architectures.
+### Focused on building production-grade AI systems that solve real-world problems using LLMs, NLP, and scalable backend architectures.
+
+
+### References
+
+Kim, Y. (2014). Convolutional Neural Networks for Sentence Classification. EMNLP.
+
+Collobert, R., et al. (2011). Natural Language Processing (Almost) from Scratch. JMLR.
+
+Mikolov, T., et al. (2013). Distributed Representations of Words and Phrases. NeurIPS.
+
+Reimers, N., & Gurevych, I. (2019). Sentence-BERT. EMNLP.
+
+Radford, A., et al. (2018). Improving Language Understanding by Generative Pre-Training. OpenAI.
+
+Brown, T., et al. (2020). Language Models are Few-Shot Learners. NeurIPS.
+
+Lewis, P., et al. (2020). Retrieval-Augmented Generation. NeurIPS.
+
+Leskovec, J., Rajaraman, A., & Ullman, J.D. (2014). Mining of Massive Datasets. Cambridge Univ. Press.
+
+Grover, A., & Leskovec, J. (2016). node2vec: Scalable Feature Learning for Networks. KDD.
+
+Li, V. O. K., et al. (2020). Question Generation from Text — A Review. arXiv.
